@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #f8f9fa;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Form container with flexbox to align the input, checkbox, and button on the same line */
+  .input-container {
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+  }
+  
+  /* Input field taking most of the width */
+  input[type="text"] {
+    flex: 1; /* Allows the input to grow and take available space */
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+ 
+  input[type="checkbox"] {
+    margin: 0 10px;
+  }
+  
+ 
+  button#addButton {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+ 
+  button#addButton:hover {
+    background-color: #218838;
+  }
+  
+  
+  button#searchButton {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+
+  button#searchButton:hover {
+    background-color: #138496;
+  }
+  
+  /* Wrapper for the table to allow horizontal scrolling */
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  th, td {
+    border: 1px solid #dee2e6;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #f1f3f5;
+  }
+  
+  /* Adjust font size and padding for smaller screens */
+  @media (max-width: 768px) {
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  
+    /* Reduce minimum width of the table on smaller devices */
+    table {
+      min-width: 100%; /* Allows table to fit within screen width */
+    }
+  }
+  
